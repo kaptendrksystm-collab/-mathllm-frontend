@@ -1,0 +1,205 @@
+﻿
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#f5f7ff">
+    <meta name="description" content="MathLLM - Platform latihan matematika berbasis AI.">
+
+    <title>MathLLM - AI Matematika</title>
+
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+    <div class="app-container">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <div class="brand-icon">M</div>
+                <div>
+                    <h2>MathLLM</h2>
+                    <p>AI Mathematics</p>
+                </div>
+            </div>
+
+            <!-- TOMBOL PERCAKAPAN BARU -->
+            <button
+                id="new-chat-button"
+                class="new-chat"
+                type="button"
+            >
+                <span>+</span> Percakapan Baru
+            </button>
+
+            <!-- NAVIGASI -->
+            <div class="sidebar-section">
+
+                <p class="section-label">MENU</p>
+
+                <a
+                    href="#"
+                    id="home-nav"
+                    class="nav-item active"
+                    aria-current="page"
+                >
+                    âŒ‚ &nbsp; Beranda
+                </a>
+
+                <a
+                    href="#"
+                    id="history-nav"
+                    class="nav-item"
+                >
+                    â—· &nbsp; Riwayat Soal
+                </a>
+
+            </div>
+
+            <!-- INFORMASI STATUS -->
+            <div class="sidebar-bottom">
+
+                <div class="status-dot"></div>
+
+                <div>
+                    <p class="status-title">MathLLM V0.1</p>
+                    <p class="status-subtitle">Prototipe lokal</p>
+                </div>
+
+            </div>
+
+        </aside>
+
+        <!-- KONTEN UTAMA -->
+        <main class="main-content">
+
+            <!-- TOPBAR -->
+            <header class="topbar">
+
+                <div>
+                    <p id="breadcrumb" class="breadcrumb">
+                        MathLLM / Beranda
+                    </p>
+
+                    <h3>Asisten Matematika AI</h3>
+                </div>
+
+                <div class="model-badge">
+                    <span class="status-dot"></span>
+                    AI Assistant
+                </div>
+
+            </header>
+
+            <!-- WORKSPACE -->
+            <section class="workspace">
+
+                <!-- KONTEN AWAL -->
+                <div class="welcome">
+
+                    <div class="welcome-icon">âˆ‘</div>
+
+                    <p class="eyebrow">
+                        MATHLLM INTELLIGENCE
+                    </p>
+
+                    <h1>
+                        Matematika jadi<br>
+                        <span>lebih mudah.</span>
+                    </h1>
+
+                    <p class="welcome-description">
+                        Masukkan soal matematika yang ingin kamu selesaikan.
+                        MathLLM akan membantu memahami soal dan menjelaskan
+                        proses penyelesaiannya.
+                    </p>
+
+                </div>
+
+                <!-- SARAN SOAL -->
+                <div class="suggestions">
+
+                    <button
+                        class="suggestion-card"
+                        type="button"
+                        data-question="Hitung 246 + 157 dan jelaskan caranya."
+                    >
+                        <span class="suggestion-icon">ï¼‹</span>
+
+                        <span>
+                            <strong>Aritmetika</strong>
+                            <small>Penjumlahan dan pengurangan</small>
+                        </span>
+                    </button>
+
+                    <button
+                        class="suggestion-card"
+                        type="button"
+                        data-question="Jelaskan cara menyelesaikan persamaan 2x + 5 = 15."
+                    >
+                        <span class="suggestion-icon">xÂ²</span>
+
+                        <span>
+                            <strong>Aljabar</strong>
+                            <small>Persamaan dan variabel</small>
+                        </span>
+                    </button>
+
+                </div>
+
+                <!-- AREA INPUT -->
+                <section class="chat-area">
+
+                    <label for="question-input">
+                        Pertanyaan matematika
+                    </label>
+
+                    <div class="input-box">
+
+                        <textarea
+                            id="question-input"
+                            rows="2"
+                            placeholder="Contoh: Berapa hasil dari 246 + 157?"
+                        ></textarea>
+
+                        <div class="input-footer">
+
+                            <span>
+                                MathLLM dapat membuat kesalahan.
+                                Periksa hasil perhitungan.
+                            </span>
+
+                            <button
+                                id="send-button"
+                                type="button"
+                                aria-label="Kirim pertanyaan"
+                            >
+                                â†‘
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <p class="footer-note">
+                    Dikembangkan sebagai prototipe AI matematika lokal.
+                </p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="static/js/app.js"></script>
+
+</body>
+</html>
+
